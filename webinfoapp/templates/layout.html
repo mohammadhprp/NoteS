@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>NoteS</title>
+        <link href='{{  url_for("static", filename="css/style.css") }}' type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar">
+            <ul class="left">
+                <li><a href="/">Note S</a></li>
+            </ul>
+            <ul class="right">
+                <li><a href="/createnotes">+ New Note</a></li>
+            </ul>
+        </nav>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
